@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+}
+
+.dados {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados__foto,
+.dados__foto--mobile {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    background: linear-gradient(90deg, #53abfd, rgb(0, 119, 255));
+    border-radius: 50%;
+}
+
+.dados__foto--mobile {
+    display: none;
+}
+
+.dados__foto img,
+.dados__foto--mobile img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -40px;
+    right: -7%;
+    border-radius: 50%;
+}
+
+.dados__title {
+    color: #53abfd;
+}
+
+.dados__label {
+    color: rgb(45, 66, 255);
+}
+
+.competencia__label {
+    color: #000;
+}
+
+.competencia__label::marker {
+    color: rgb(45, 66, 255);
+}
+
+.formaçao__academica{
+    color:  rgb(45, 66, 255);
+}
+
+@media (max-width: 820px) {
+    .dados {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dados__foto {
+        display: none;
+    }
+
+    .dados__foto--mobile {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .dados__foto--mobile img {
+        display: block;
+    }
+    
+}
